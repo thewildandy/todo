@@ -5,5 +5,9 @@
   "authors": [
     "Andy Wild <thewildandy@gmail.com>"
   ],
-  "private": true
+  "private": true,
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7"
+  }
 }

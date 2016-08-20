@@ -5,7 +5,7 @@ const BrowserWindow = electron.BrowserWindow
 let mainWindow
 
 function createWindow () {
-  mainWindow = new BrowserWindow({width: 260, height: 480})
+  mainWindow = new BrowserWindow({width: 280, height: 460, icon: __dirname + '/icon.icns'})
   mainWindow.loadURL(`file://${__dirname}/index.html`)
   // mainWindow.webContents.openDevTools()
   mainWindow.on('closed', function () {

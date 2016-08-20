@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="todo">
   <head>
+    <title>todo</title>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="todo.js"></script>
   </head>
-  <body>
-    <h1>Hello World!</h1>
+  <body ng-controller="TodoController" ng-init="initialise()" style="padding-top: 40px" class="text-center">
+    <div class="masthead">
+      <p class="lead">What do you need to do today?</p>
+    </div>
+
+    <div class="new-task-wrapper">
+      <input type="text" ng-model="newTask" on-key-press="createTask()" key-code="13">
+    </div>
+
+    <hr/>
+
+    <ul class="list-group task-list">
+      <li class="list-group-item task" ng-repeat="task in tasks" ng-click="completeTask(task)">
+        {{task.title}}&nbsp; <span class="pull-right">{{task.done ? '&#10004;' : '&#10007;'}}</span>
+      </li>
+    </ul>
   </body>
 </html>

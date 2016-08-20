@@ -8,5 +8,8 @@
   },
   "devDependencies": {
     "electron-prebuilt": "^1.2.0"
+  },
+  "dependencies": {
+    "bower": "^1.7.9"
   }
 }

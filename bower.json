@@ -1,0 +1,9 @@
+{
+  "name": "todo",
+  "description": "A minimal todo app built on Electron",
+  "main": "main.js",
+  "authors": [
+    "Andy Wild <thewildandy@gmail.com>"
+  ],
+  "private": true
+}

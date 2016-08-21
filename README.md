@@ -1,6 +1,8 @@
 # todo
 A minimal todo app built on Electron
 
+![todo app preview](preview.png)
+
 ## Installation
 Clone down the repository into a new directory
 ```

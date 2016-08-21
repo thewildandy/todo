@@ -1,0 +1,24 @@
+body {
+  padding-top: 20px;
+  text-align: center;
+  color: #2a2935;
+  background: #fff; }
+
+input {
+  color: #2a2935; }
+
+.new-task {
+  text-align: center;
+  color: #2a2935; }
+
+.list-group-item, .new-task {
+  background: transparent; }
+
+.task {
+  cursor: pointer; }
+  .task.done .status-icon {
+    color: #26d226; }
+  .task.not-done .status-icon {
+    color: #cccccc; }
+
+/*# sourceMappingURL=app.css.map */
